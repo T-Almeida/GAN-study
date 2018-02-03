@@ -10,16 +10,12 @@ ageron - rep: https://github.com/ageron/handson-ml/ and book
 """
 import matplotlib.pyplot as plt
 
-def plot_mnist_images(images, cls_true, cls_pred=None):
+def plot_mnist_images(images):
     """
 
-    :param images:
-    :param cls_true:
-    :param cls_pred:
+    :param images: matrix (M,K) m = images number, K = images flated pixeis
     :return:
     """
-    assert len(images) == len(cls_true) == 9
-
     # Create figure with 3x3 sub-plots.
     fig, axes = plt.subplots(3, 3)
     fig.subplots_adjust(hspace=0.3, wspace=0.3)
@@ -28,14 +24,29 @@ def plot_mnist_images(images, cls_true, cls_pred=None):
         # Plot image.
         ax.imshow(images[i].reshape(28,28), cmap='binary')
 
-        # Show true and predicted classes.
-        if cls_pred is None:
-            xlabel = "True: {0}".format(cls_true[i])
-        else:
-            xlabel = "True: {0}, Pred: {1}".format(cls_true[i], cls_pred[i])
+        # Remove ticks from the plot.
+        ax.set_xticks([])
+        ax.set_yticks([])
 
-        # Show the classes as the label on the x-axis.
-        ax.set_xlabel(xlabel)
+    # Ensure the plot is shown correctly with multiple plots
+    # in a single Notebook cell.
+    plt.show()
+
+
+
+def plot_mnist_images_conditonal(images,per_class=6):
+    """
+
+    :param images: matrix (M,K) m = images number, K = images flated pixeis
+    :return:
+    """
+    # Create figure with 3x3 sub-plots.
+    fig, axes = plt.subplots(10, per_class)
+    #fig.subplots_adjust(hspace=0.3, wspace=0.3)
+
+    for i, ax in enumerate(axes.flat):
+        # Plot image.
+        ax.imshow(images[i].reshape(28,28), cmap='binary')
 
         # Remove ticks from the plot.
         ax.set_xticks([])
