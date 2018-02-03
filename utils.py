@@ -55,3 +55,5 @@ def plot_mnist_images_conditonal(images,per_class=6):
     # Ensure the plot is shown correctly with multiple plots
     # in a single Notebook cell.
     plt.show()
+
+    
