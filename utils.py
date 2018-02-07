@@ -119,3 +119,12 @@ def random_y(m):
     :return: Vector with shape (m,n)
     '''
     return one_hot(np.random.randint(10, size=[m]))
+
+def max_row_index(x):
+    '''
+    Given matrix (m,c) return the max index
+
+    :param x:
+    :return:
+    '''
+    return np.argmax(x,axis=1)
