@@ -22,6 +22,7 @@ Here i present several GAN models and basic classifiers (just to compare results
 * GAN - https://arxiv.org/abs/1406.2661
 * Conditional GAN - https://arxiv.org/abs/1411.1784
 * Auxiliar classifier GAN - https://arxiv.org/abs/1610.09585
+* Deep Convolution GAN - https://arxiv.org/abs/1511.06434
 * SSGAN - https://arxiv.org/abs/1606.03498
 * Book - Hands-On Machine Learning with Scikit-Learn and TensorFlow (first steps)
 * Book code - https://github.com/ageron/handson-ml
