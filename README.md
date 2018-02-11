@@ -11,10 +11,11 @@ Here i present several GAN models and basic classifiers (just to compare results
 * Conditional GAN
 * NN for MNIST Classification (simple nn, no dropout or other fancies tecniques, just to have baseline score)
 * Auxiliar classifier GAN
-
-#### Current/future work
 * CNN for MNIST Classification (just to have baseline score)
 * Deep Convolution GAN
+
+#### Current/future work
+* Condition Deep Convolution GAN
 * Semi Supervised GAN (Improved Techniques for Training GANs)
 * Information Retrieval GAN
 
