@@ -30,7 +30,7 @@ Here i present several GAN models and basic classifiers (just to compare results
 * Models code examples - https://github.com/wiseodd/generative-models
 
 ### Material for future study
-
+* ICGAN - https://arxiv.org/abs/1611.06355
 * EBGAN - https://arxiv.org/abs/1609.03126
 * BEGAN - https://blog.heuritech.com/2017/04/11/began-state-of-the-art-generation-of-faces-with-generative-adversarial-networks/
 * BEGAN - (paper)
