@@ -7,12 +7,13 @@ Hi, this repository was created as a student of the master's degree in (computer
 Here i present several GAN models and basic classifiers (just to compare results) in format of notebook implemented with tensorflow using the layers API
 
 #### Current implementation's
-* GAN (original 2014)
-* Conditional GAN
-* NN for MNIST Classification (simple nn, no dropout or other fancies tecniques, just to have baseline score)
-* Auxiliar classifier GAN
-* CNN for MNIST Classification (just to have baseline score)
-* Deep Convolution GAN
+1. GAN (original 2014)
+1. Conditional GAN
+1. NN for MNIST Classification (simple nn, no dropout or other fancies tecniques, just to have baseline score)
+1. Auxiliar classifier GAN
+1. CNN for MNIST Classification (just to have baseline score)
+1. Deep Convolution GAN
+1. Condition Deep Convolution GAN
 
 #### Current/future work
 * Condition Deep Convolution GAN
