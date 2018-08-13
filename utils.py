@@ -36,6 +36,28 @@ def plot_mnist_images(images):
     plt.show()
 
 
+def plot_mnist_2dimages(images):
+    """
+
+    :param images: matrix (M,X,Y) m = images number, X,Y = 2d array of the image
+    :return:
+    """
+    # Create figure with 3x3 sub-plots.
+    fig, axes = plt.subplots(3, 3)
+    fig.subplots_adjust(hspace=0.3, wspace=0.3)
+
+    for i, ax in enumerate(axes.flat):
+        # Plot image.
+        ax.imshow(images[i], cmap='binary')
+
+        # Remove ticks from the plot.
+        ax.set_xticks([])
+        ax.set_yticks([])
+
+    # Ensure the plot is shown correctly with multiple plots
+    # in a single Notebook cell.
+    plt.show()
+
 
 def plot_mnist_images_conditonal(images,per_class=6):
     """
